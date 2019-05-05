@@ -1,0 +1,11 @@
+environment:
+  DENO_DIR: $(APPVEYOR_BUILD_FOLDER)\deno
+
+install:
+  - ps: iex (iwr https://deno.land/x/install/install.ps1)
+  
+build: off
+shallow_clone: true
+
+test_script: 
+  - cmd: powershell -file ./test.ps1

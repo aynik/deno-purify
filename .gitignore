@@ -1,8 +1,1 @@
-node_modules
-lib
-yarn-error.log
-documentation
-coverage
-**/*.d.ts
-.cache
-dist
+deno/gen
